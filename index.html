@@ -122,6 +122,9 @@ html{scroll-behavior:smooth}
 <p style="margin: 0; font-size: 17px; color: #3A3D38">Tell us what's slowing you down. The best requests get built, and you get it free.</p>
 </div>
 <form id="request-form" style="display: flex; flex-direction: column; gap: 10px; width: 100%; max-width: 420px">
+<input type="hidden" name="subject" value="New problem submitted · The Italian Studio Co.">
+<input type="hidden" name="from_name" value="theitalianstudioco.com">
+<input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display: none">
 <label for="prob3" style="font-size: 13px; color: #3A3D38">What's the problem?</label>
 <textarea id="prob3" name="problem" required rows="3" placeholder="e.g. I spend 3 hours a week chasing unpaid invoices." style="font-family: inherit; font-size: 16px; padding: 14px 16px; border-radius: 10px; border: 1px solid rgba(14,15,12,0.15); background: #FFFFFF; resize: vertical"></textarea>
 <label for="req3" style="font-size: 13px; color: #3A3D38">Your email</label>
@@ -155,14 +158,17 @@ html{scroll-behavior:smooth}
   var el=document.getElementById('sf-clock');
   function tick(){try{el.textContent=new Intl.DateTimeFormat('en-US',{timeZone:'America/Los_Angeles',hour:'numeric',minute:'2-digit',second:'2-digit'}).format(new Date());}catch(e){}}
   tick(); setInterval(tick,1000);
-  // Problem intake. Set FORM_ENDPOINT to your form service URL (see README).
-  var FORM_ENDPOINT='';
+  // Problem intake → Web3Forms (free) → emailed to Tommy → logged in the Idea Backlog.
+  // The access key is safe to be public: it can only send email to Tommy's inbox.
+  var FORM_ENDPOINT='https://api.web3forms.com/submit';
+  var WEB3FORMS_KEY='';
   var f=document.getElementById('request-form'), s=document.getElementById('form-status');
   f.addEventListener('submit',function(e){
     e.preventDefault();
-    if(!FORM_ENDPOINT){s.textContent='Thanks! Submissions open very soon.';return;}
+    if(!WEB3FORMS_KEY){s.textContent='Thanks! Submissions open very soon.';return;}
     s.textContent='Sending…';
-    fetch(FORM_ENDPOINT,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)})
+    var d=new FormData(f); d.append('access_key',WEB3FORMS_KEY);
+    fetch(FORM_ENDPOINT,{method:'POST',headers:{'Accept':'application/json'},body:d})
       .then(function(r){if(!r.ok)throw 0;f.reset();s.textContent='Got it. Thank you! We read every one.';})
       .catch(function(){s.textContent='Something went wrong. Please try again.';});
   });
