@@ -10,6 +10,6 @@ Hub site for theitalianstudioco.com. *Built to turn your mountains into molehill
 Brief and design decisions: `Dropbox/Ventures/Sprints/the-italian-studio/BRIEF.md`
 
 ## To do
-- [ ] Connect the problem-intake form (`FORM_ENDPOINT` in index.html)
-- [ ] Turn on GitHub Pages and point Porkbun DNS
+- [x] Connect the problem-intake form (Web3Forms → Gmail; key is `WEB3FORMS_KEY` in index.html)
+- [x] Turn on GitHub Pages and point Porkbun DNS (HTTPS enforced)
 - [ ] List the first tool in the Tools grid
