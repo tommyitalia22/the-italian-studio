@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+<rect width="400" height="400" fill="#FBFAF8"/>
+<!-- jacket -->
+<path d="M46 400 Q56 328 126 310 L168 298 L232 298 L274 310 Q344 328 354 400 Z" fill="#1E2A3C"/>
+<!-- shirt -->
+<path d="M164 296 L236 296 L224 400 L176 400 Z" fill="#F6F3EC"/>
+<!-- neck -->
+<path d="M175 250 L225 250 L227 300 L200 336 L173 300 Z" fill="#EDB99A"/>
+<path d="M175 258 Q200 282 225 258 L225 274 Q200 290 175 274 Z" fill="#D99F80" opacity=".6"/>
+<!-- open collar -->
+<path d="M166 294 L180 288 L200 336 L184 352 Z" fill="#FFFFFF" stroke="#E2DDD1" stroke-width="2" stroke-linejoin="round"/>
+<path d="M234 294 L220 288 L200 336 L216 352 Z" fill="#FFFFFF" stroke="#E2DDD1" stroke-width="2" stroke-linejoin="round"/>
+<!-- lapels -->
+<path d="M126 310 L166 296 L192 380 L182 400 L148 400 Z" fill="#283750"/>
+<path d="M274 310 L234 296 L208 380 L218 400 L252 400 Z" fill="#283750"/>
+<!-- ears -->
+<ellipse cx="130" cy="198" rx="14" ry="22" fill="#F0BFA0"/>
+<ellipse cx="270" cy="198" rx="14" ry="22" fill="#F0BFA0"/>
+<ellipse cx="132" cy="199" rx="6" ry="12" fill="#DDA084"/>
+<ellipse cx="268" cy="199" rx="6" ry="12" fill="#DDA084"/>
+<!-- face -->
+<path d="M135 160 Q136 108 200 106 Q264 108 265 160 L263 210 Q256 262 200 272 Q144 262 137 210 Z" fill="#F4C6A8"/>
+<!-- cheeks -->
+<ellipse cx="157" cy="219" rx="17" ry="11" fill="#EA8F7F" opacity=".32"/>
+<ellipse cx="243" cy="219" rx="17" ry="11" fill="#EA8F7F" opacity=".32"/>
+<!-- hair -->
+<path d="M131 180 Q120 118 150 90 Q186 58 232 66 Q278 76 279 128 Q281 158 269 182 Q267 150 255 136 Q232 122 204 124 Q172 122 152 134 Q138 148 131 180 Z" fill="#5A3A23"/>
+<path d="M150 104 Q178 76 222 78" stroke="#7D5538" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M164 116 Q198 92 246 98" stroke="#7D5538" stroke-width="6" fill="none" stroke-linecap="round"/>
+<path d="M236 82 Q264 92 270 124" stroke="#7D5538" stroke-width="6" fill="none" stroke-linecap="round"/>
+<!-- brows -->
+<path d="M152 157 Q170 147 189 155" stroke="#4A2F1C" stroke-width="7.5" fill="none" stroke-linecap="round"/>
+<path d="M211 155 Q230 147 248 157" stroke="#4A2F1C" stroke-width="7.5" fill="none" stroke-linecap="round"/>
+<!-- eyes (smiling) -->
+<ellipse cx="171" cy="178" rx="7.5" ry="6.5" fill="#3F5F7E"/>
+<ellipse cx="229" cy="178" rx="7.5" ry="6.5" fill="#3F5F7E"/>
+<circle cx="171" cy="178" r="3.4" fill="#1C2733"/><circle cx="229" cy="178" r="3.4" fill="#1C2733"/>
+<circle cx="174" cy="175.5" r="2" fill="#fff"/><circle cx="232" cy="175.5" r="2" fill="#fff"/>
+<path d="M160 187 Q171 193 182 187" stroke="#D99F80" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M218 187 Q229 193 240 187" stroke="#D99F80" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<!-- nose -->
+<path d="M201 182 Q198 200 192 209 Q200 215 209 209" stroke="#D3957A" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<!-- smile -->
+<path d="M161 226 Q200 272 239 226 Q200 234 161 226 Z" fill="#6E2626"/>
+<path d="M165 227.5 Q200 235 235 227.5 L231 238 Q200 245 169 238 Z" fill="#FFFFFF"/>
+<path d="M182 252 Q200 258 218 252 Q200 247 182 252 Z" fill="#D9736A"/>
+</svg>
